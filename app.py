@@ -9,7 +9,8 @@ from werkzeug.utils import secure_filename
 app = Flask(__name__)
 
 # Configuration
-MODEL_PATH = 'eye_disease_model (1).h5'
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = os.path.join(BASE_DIR, "eye_disease_model.h5") 
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
 
 # Load Model
