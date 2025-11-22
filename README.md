@@ -60,6 +60,8 @@ https://web-production-ec56.up.railway.app/
 
 ## Dataset
 
+Dataset Link:
+https://www.kaggle.com/datasets/gunavenkatdoddi/eye-diseases-classification
 Recommended dataset (example: Kaggle "eye-diseases-classification").
 
 Your dataset should follow this structure:
@@ -259,3 +261,4 @@ Contributions are welcome. Please open issues for bugs or feature requests and s
 - For questions, feature requests, or help, open an issue or contact the repo owner.
 
 ---
+
