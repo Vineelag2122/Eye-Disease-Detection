@@ -11,11 +11,11 @@ This project uses MobileNetV2 (fine-tuned) and is deployed using Railway with Te
 
 #🚀 Live Demo (Production URL)
 
-🔗 App URL: Add your Railway production link here
+🔗 App URL: https://web-production-ec56.up.railway.app/
 
 #📂 Dataset
 
-🔗 Dataset Link: Add your dataset link here (Google Drive / Kaggle / GitHub)
+🔗 Dataset Link: https://www.kaggle.com/datasets/gunavenkatdoddi/eye-diseases-classification
 
 Your dataset must follow this structure:
 dataset/
@@ -55,3 +55,4 @@ Machine Learning
   ImageDataGenerator (augmentation)
 Deployment
   Railway.app (recommended for TensorFlow CPU apps)
+
