@@ -9,17 +9,19 @@ from werkzeug.utils import secure_filename
 app = Flask(__name__)
 
 # Configuration
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-MODEL_PATH = os.path.join(BASE_DIR, "eye_disease_model_full.h5") 
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = os.path.join(BASE_DIR, "eye_disease_model_full.h5")
 
-# Load Model
+print("Model path:", MODEL_PATH)  # debug
+
 try:
     model = load_model(MODEL_PATH)
-    print("Model loaded successfully.")
+    print("Model loaded successfully!")
 except Exception as e:
-    print(f"Error loading model: {e}")
+    print("Error loading model:", e)
     model = None
+
 
 # Classes
 CLASSES = ['cataract', 'diabetic_retinopathy', 'glaucoma', 'normal']
@@ -80,3 +82,4 @@ def predict():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
